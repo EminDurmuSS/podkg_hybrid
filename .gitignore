@@ -1,0 +1,113 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.eggs/
+build/
+dist/
+pip-wheel-metadata/
+*.egg
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.mypy_cache/
+.pytype/
+.ruff_cache/
+.cache/
+
+# Virtual envs
+.venv/
+venv/
+ENV/
+env/
+
+# =========================
+# Streamlit
+# =========================
+.streamlit/secrets.toml
+.streamlit/*.toml
+.streamlit/*.json
+
+# Streamlit caches / artifacts (if you create any)
+.streamlit/cache/
+.streamlit/static/
+
+# =========================
+# Env / Secrets
+# =========================
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+
+# Common secret/config files
+config.local.*
+settings.local.*
+secrets.*
+*credentials*.json
+
+# =========================
+# OS / Editor
+# =========================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+*.iml
+
+# =========================
+# Jupyter / Notebooks
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# Logs / Debug dumps
+# =========================
+logs/
+*.log
+*.out
+*.err
+debug/
+tmp/
+temp/
+*.tmp
+
+# =========================
+# Data outputs (optional)
+# =========================
+# Uncomment if you generate local datasets/exports
+# data/
+# outputs/
+# artifacts/
+# *.csv
+# *.parquet
+# *.jsonl
+
+# =========================
+# Local DB / Cache (optional)
+# =========================
+# If you ever dump local sqlite or similar
+*.sqlite
+*.db
+
+# =========================
+# Node (only if you have any JS tooling)
+# =========================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
