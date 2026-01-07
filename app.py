@@ -7,12 +7,16 @@ from typing import Any, Dict, List, Optional
 
 import os
 import pandas as pd
-
+import sys
 import streamlit as st
 from dotenv import load_dotenv
 
 PKG_DIR = os.path.dirname(os.path.abspath(__file__))
 PROJECT_ROOT = os.path.abspath(os.path.join(PKG_DIR, ".."))
+
+# Streamlit Cloud import fix: parent'ı sys.path'e ekle
+if PROJECT_ROOT not in sys.path:
+    sys.path.insert(0, PROJECT_ROOT)
 
 from podkg_hybrid.shared.types import GraphSettings, VectorSettings
 from podkg_hybrid.vector.engine import (
